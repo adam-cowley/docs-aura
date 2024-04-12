@@ -56,12 +56,14 @@ Read more about link:{neo4j-docs-base-uri}/cypher-manual/current/execution-plans
 To best interpret the output of your execution plan, it is recommended that you get familiar with the terms used on it.
 See link:{neo4j-docs-base-uri}/cypher-manual/current/execution-plans/operator-summary/[this summary of execution plan operators] for more information.
 
+For best practices on how to model your data for optimal performance, we recommend taking the link:https://graphacademy.neo4j.com/courses/modeling-fundamentals/[Graph Data Modeling Fundamentals course on GraphAcademy^].
+
 == Index specification
 
 As your data volume grows, it is important to define constraints and indexes in order to achieve the best performance for your queries.
 For that, the runtime engine will need to evaluate the cost associated with a query and, to get the best estimations, it will rely on already existing indexes.
 This will likely show whether an index is missing from the execution plan and which one is it.
-Though in some circunstances it might look like an index is not available or possible, it may also make sense to reconsider the model and create an intermediate node or another relationship type just to leverage it.
+Though in some circumstances it might look like an index is not available or possible, it may also make sense to reconsider the model and create an intermediate node or another relationship type just to leverage it.
 
 Read more about link:{neo4j-docs-base-uri}/cypher-manual/current/query-tuning/indexes/[the use of indexes] for a more comprehensive explanation.
 
